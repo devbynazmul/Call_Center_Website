@@ -1,0 +1,1373 @@
+/* =================================
+   DIGITAL PILLARS
+   CINEMATIC WEBSITE CSS
+================================= */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#020405;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* =================================
+   NAVBAR
+================================= */
+
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    padding:0 8%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    z-index:1000;
+
+
+    background:
+
+    rgba(0,0,0,.35);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-bottom:
+
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+
+
+
+nav a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    margin:0 18px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    color:#d9b65d;
+
+}
+
+
+
+
+
+.nav-btn{
+
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    border:none;
+
+
+    background:#d9b65d;
+
+
+    color:#111;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+
+.hero{
+
+
+    min-height:100vh;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    padding:140px 8% 80px;
+
+
+    position:relative;
+
+
+    background:
+
+
+    radial-gradient(circle at 80% 50%,
+
+    rgba(217,182,93,.18),
+
+    transparent 35%);
+
+}
+
+
+
+
+.hero-content{
+
+
+    width:50%;
+
+
+    z-index:5;
+
+}
+
+
+
+.small-title{
+
+
+    color:#d9b65d;
+
+
+    letter-spacing:5px;
+
+
+    font-size:13px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+h1{
+
+
+    font-size:76px;
+
+
+    line-height:1.05;
+
+
+    letter-spacing:-3px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+h1 span{
+
+
+    display:block;
+
+
+    color:#d9b65d;
+
+
+}
+
+
+
+
+.hero-content>p{
+
+
+    margin-top:30px;
+
+
+    max-width:560px;
+
+
+    color:#b5b5b5;
+
+
+    font-size:20px;
+
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+.hero-buttons{
+
+
+    margin-top:40px;
+
+
+    display:flex;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+.primary{
+
+
+    padding:16px 35px;
+
+
+    border-radius:40px;
+
+
+    border:none;
+
+
+    background:#d9b65d;
+
+
+    color:#111;
+
+
+    font-weight:700;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+.secondary{
+
+
+    padding:16px 30px;
+
+
+    border-radius:40px;
+
+
+    background:transparent;
+
+
+    border:1px solid #555;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.trust{
+
+
+    margin-top:35px;
+
+
+    color:#d9b65d;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =================================
+   3D SCENE
+================================= */
+
+
+.scene{
+
+
+    position:absolute;
+
+
+    right:5%;
+
+
+    width:600px;
+
+
+    height:600px;
+
+
+}
+
+
+
+
+
+.core{
+
+
+    position:absolute;
+
+
+    top:100px;
+
+
+    left:200px;
+
+
+    width:220px;
+
+
+    height:420px;
+
+
+    border-radius:40px;
+
+
+    background:
+
+
+    linear-gradient(
+
+    180deg,
+
+    #111,
+
+    #d9b65d
+
+    );
+
+
+    box-shadow:
+
+
+    0 0 120px rgba(217,182,93,.6);
+
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.light{
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+
+    transparent,
+
+    rgba(255,255,255,.5)
+
+    );
+
+
+    animation:
+
+    shine 4s infinite;
+
+
+}
+
+
+
+
+@keyframes shine{
+
+
+0%{
+
+transform:translateY(-100%);
+
+}
+
+
+100%{
+
+transform:translateY(100%);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   GLASS DASHBOARD
+================================= */
+
+
+.dashboard{
+
+
+    position:absolute;
+
+
+    width:220px;
+
+
+    padding:25px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+
+    rgba(255,255,255,.08);
+
+
+
+    backdrop-filter:blur(20px);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.5);
+
+
+}
+
+
+
+.dashboard h4{
+
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+
+
+
+.dashboard strong{
+
+
+    display:block;
+
+
+    font-size:40px;
+
+
+    margin:10px 0;
+
+
+    color:#fff;
+
+
+}
+
+
+
+
+.dashboard p{
+
+
+    color:#d9b65d;
+
+
+}
+
+
+
+
+.card-one{
+
+
+    top:60px;
+
+
+    left:0;
+
+
+}
+
+
+
+.card-two{
+
+
+    top:240px;
+
+
+    right:0;
+
+
+}
+
+
+
+
+.card-three{
+
+
+    bottom:50px;
+
+
+    left:100px;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+   SECTIONS
+================================= */
+
+
+section{
+
+
+    padding:120px 8%;
+
+
+}
+
+
+
+
+h2{
+
+
+    text-align:center;
+
+
+    font-size:55px;
+
+
+    margin-bottom:70px;
+
+
+}
+
+
+
+
+
+
+/* =================================
+ SERVICES
+================================= */
+
+
+.services{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+.service-card{
+
+
+    padding:35px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.service-card:hover{
+
+
+    transform:
+
+    translateY(-15px);
+
+
+    border-color:#d9b65d;
+
+
+}
+
+
+
+
+.service-card h3{
+
+
+    margin-bottom:20px;
+
+
+    color:#fff;
+
+
+}
+
+
+
+
+.service-card p{
+
+
+    color:#aaa;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =================================
+ ANALYTICS
+================================= */
+
+
+.analytics{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.analytics strong{
+
+
+    font-size:60px;
+
+
+    color:#d9b65d;
+
+
+}
+
+
+
+.analytics p{
+
+
+    color:#aaa;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+ PROJECTS
+================================= */
+
+
+.projects{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+.project{
+
+
+    height:250px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+
+    linear-gradient(
+
+    135deg,
+
+    #111,
+
+    #333
+
+    );
+
+
+    display:flex;
+
+
+    align-items:end;
+
+
+    padding:30px;
+
+
+    font-size:25px;
+
+
+    font-weight:bold;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.project:hover{
+
+
+    transform:scale(1.04);
+
+
+}
+
+
+
+
+
+
+
+
+/* =================================
+ REVIEW
+================================= */
+
+
+.review{
+
+
+    max-width:700px;
+
+
+    margin:auto;
+
+
+    padding:50px;
+
+
+    text-align:center;
+
+
+    background:
+
+    rgba(255,255,255,.06);
+
+
+
+    border-radius:30px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =================================
+ CTA
+================================= */
+
+
+.cta-section{
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =================================
+ AI BUTTON
+================================= */
+
+
+.ai{
+
+
+    position:fixed;
+
+
+    right:30px;
+
+
+    bottom:30px;
+
+
+    z-index:999;
+
+
+}
+
+
+
+
+#ai-button{
+
+
+    width:70px;
+
+
+    height:70px;
+
+
+    border-radius:50%;
+
+
+    border:none;
+
+
+    background:#d9b65d;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.ai-box{
+
+
+    display:none;
+
+
+    position:absolute;
+
+
+    right:0;
+
+
+    bottom:90px;
+
+
+    width:300px;
+
+
+    padding:25px;
+
+
+    background:#111;
+
+
+    border-radius:25px;
+
+
+}
+
+
+
+
+
+.ai-box button{
+
+
+    width:100%;
+
+
+    margin-top:10px;
+
+
+    padding:12px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+
+footer{
+
+
+    padding:40px;
+
+
+    text-align:center;
+
+
+    color:#777;
+
+
+}
+
+
+
+
+
+
+
+
+/* =================================
+ MOBILE
+================================= */
+
+
+@media(max-width:900px){
+
+
+nav{
+
+display:none;
+
+}
+
+
+
+.hero{
+
+padding-top:150px;
+
+}
+
+
+
+.hero-content{
+
+width:100%;
+
+}
+
+
+
+h1{
+
+font-size:45px;
+
+}
+
+
+
+.scene{
+
+display:none;
+
+}
+
+
+
+.services{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* ==============================
+   PORTFOLIO PROJECT CARDS
+============================== */
+
+
+.projects{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.project{
+
+    height:320px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    background:#111;
+
+    cursor:pointer;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+}
+
+
+
+.project img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:0.8s ease;
+
+}
+
+
+
+
+.project::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    transparent 40%,
+
+    rgba(0,0,0,0.85)
+
+    );
+
+
+}
+
+
+
+
+.project:hover img{
+
+    transform:scale(1.15);
+
+}
+
+
+
+
+
+
+.project-overlay{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:35px;
+
+    z-index:2;
+
+    
+
+}
+
+
+
+.project-overlay h3{
+
+    color:white;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.project-overlay p{
+
+    color:#d9b65d;
+
+    font-size:16px;
+
+}
+
+
+
+
+.project:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#d9b65d;
+
+    transition:.4s;
+
+}
+
+
+
+.project img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s ease;
+
+}
+
+
+
+.project:hover img{
+
+transform:scale(1.12);
+
+}
+
+
+
+.project-overlay{
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+padding:30px;
+
+
+background:
+
+linear-gradient(
+
+transparent,
+
+rgba(0,0,0,.9)
+
+);
+
+
+transform:translateY(20px);
+
+transition:.4s;
+
+
+}
+
+
+
+.project:hover .project-overlay{
+
+transform:translateY(0);
+
+}
+
+
+
+.project-overlay h3{
+
+font-size:25px;
+
+margin-bottom:8px;
+
+}
+
+
+
+.project-overlay p{
+
+color:#d9b65d;
+
+}
+
+
+
+.analytics{
+
+flex-direction:column;
+
+gap:40px;
+
+}
+
+
+}
